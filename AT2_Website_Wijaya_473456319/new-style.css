@@ -47,7 +47,11 @@ main > section {
         margin-right : 25px;
     } */
 
-    main > section:nth-of-type(2) > section > section > img:nth-of-type(1) {
+    /*
+    * first-of-type and nth-of-type(1) are the same 
+    * which are telling the first item of the component
+    */
+    main > section:nth-of-type(2) > section > section > img:first-of-type {
         width: 100%;
         height: 300px;
         object-fit: cover;
@@ -71,7 +75,7 @@ main > section {
         justify-content: space-evenly;
     }
 
-     main > section:nth-of-type(4) > section > section > img:nth-of-type(1) {
+     main > section:nth-of-type(4) > section > section > img:first-of-type {
         width: 100%;
         height: 500px;
         object-fit: cover;
@@ -82,21 +86,17 @@ main > section {
 }
 
 @media screen and (min-width:320px) and (max-width: 961px) { 
-    #banner {
+    header > img:last-of-type {
         display: none;
     }
  
-    #logo {
+    header > img:first-of-type {
         flex-grow: 0;
         width: 100%;
     }
-
-    section:nth-of-type(1) > h1 {
-        text-align: center;
-    }
     
     /* smartphones, iPhone, portrait 480x320 phones */ 
-    article:nth-of-type(1)  {
+    main >  article:nth-of-type(1)  {
         display: flex;
         flex-direction: column;
         /* width: 100%; */
@@ -105,12 +105,22 @@ main > section {
         padding: 50px;
     }
 
-    article:nth-of-type(1) > div#left {
-   
+    main > article:nth-of-type(1) > aside:first-of-type {
         margin-bottom : 50px;
     }
 
-    article:nth-of-type(2) >div>  div.product-item {
+    main > section:nth-of-type(2) > section > section {
+        margin-bottom: 15px;
+    }
+
+    main > section:nth-of-type(2) > section > section > img:first-of-type {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 5px;
+    }
+
+    article:nth-of-type(2) > div >  div.product-item {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -119,7 +129,7 @@ main > section {
         margin-bottom: 50px;
     }
     
-    article:nth-of-type(2) >div.product-container {
+    article:nth-of-type(2) > div.product-container {
         display: flex;
         flex-direction: column;
         /* width: 100%; */
@@ -139,6 +149,10 @@ main > section {
     
 }
 
+
+article:nth-of-type(1) > aside > h1 {
+    margin-bottom: 5px;
+}
 
 /* @TODO: kill this */
 /* .home-article-title {
