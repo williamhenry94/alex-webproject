@@ -1,11 +1,11 @@
-section {
+main > section {
     padding: 50px;
 }
 
 @media screen and (min-width:1281px) { 
     /* desktop view */
    
-    article:nth-of-type(1)  {
+    main > article:nth-of-type(1)  {
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
@@ -14,7 +14,7 @@ section {
         /* width: 100%; */
     }
 
-    article:nth-of-type(2) {
+    main >  article:nth-of-type(2) {
         display: grid;
         grid-template-columns: 30% 30% 30%;
         grid-template-rows: 90%;
@@ -22,7 +22,7 @@ section {
         align-content: center; 
     }
 
-    article:nth-child(1) {
+    main > article:nth-child(1) {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         grid-template-rows: 60% 10% 25%; 
@@ -31,36 +31,52 @@ section {
         border-radius: 5em; 
     }
 
+    main > section:nth-of-type(1) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     
-    article:nth-of-type(1) > div {
+
+    /* kill these */
+    /* article:nth-of-type(1) > div {
         width: 50%;
     }
 
     article:nth-of-type(1) > div#left {
-   
         margin-right : 25px;
+    } */
+
+    main > section:nth-of-type(2) > section > section > img:nth-of-type(1) {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
     }
 
-    section:nth-of-type(2) > div#promo-product {
-        display: grid;
-        grid-template-columns: 45% 45%;
-        grid-template-rows: 90%;
-        justify-content: space-evenly;
-        align-content: center; 
+    main >  section:nth-of-type(2) > section  {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
     }
 
-    section:nth-of-type(2) > h1 {
+    /* kill this */
+    /* main > section:nth-of-type(2) > h1 {
         text-align: center;
+    } */
+
+    main > section:nth-of-type(4) > section {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
-    
-    section:nth-of-type(2) > div > div.promo-item {
-        display: grid;
-        grid-template-columns: 100%;
-        /* grid-template-rows: 60% 10% 25%; */
-        align-content: space-between;
-        justify-content: center;
-        border-radius: 5em;
+
+     main > section:nth-of-type(4) > section > section > img:nth-of-type(1) {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        margin-bottom: 10px;
     }
+ 
     
 }
 
@@ -123,68 +139,85 @@ section {
 }
 
 
-.home-article-title {
+/* kill this */
+/* .home-article-title {
    margin-bottom: 10px;
-}
+} */
 
+/* kill this */
 article:nth-of-type(2) > h1 {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.product-item-image-head {
+/* kill this */
+/* .product-item-image-head {
     width: 100%;
     height: 300px;
     object-fit: cover;
-}
+} */
 
-section:nth-of-type(3) > h1 {
+main > section > h1 {
     text-align: center;
     margin-bottom: 25px;
 }
 
-.promo-item-image-head {
+/* kill this */
+/* .promo-item-image-head {
     width: 100%;
     height: 300px;
     object-fit: cover;
+} */
 
-}
-.promo-title {
+/* kill this */
+/* .promo-title {
     margin-top: 15px;
-}
+} */
 
-section:nth-of-type(4) > h1 {
+/* kill this */
+/* 
+main > section:nth-of-type(4) > h1 {
     text-align: center;
     margin-bottom: 25px;
-}
- 
-section:nth-last-of-type(4) > #contact-section {
+} */
+
+
+/* kill this */
+/* main > section:nth-last-of-type(5) > section {
     display: grid;
     grid-template-columns:10% 50% 30%;
     grid-template-rows: 90%;
     justify-content: space-evenly;
     align-content: center;
     align-items: center;
-}
+} */
 
-section:nth-of-type(4) >form > div.contact {
+section:nth-of-type(5) > form > section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 5px;
 }
 
-section:nth-of-type(4) >form > div.contact > label {
-   width: 40%;
+section:nth-of-type(5) >form > section > label {
+   width: 15%;
 }
 
-section:nth-of-type(4) >form > div.contact > input, select {
-    width: 60%;
+section:nth-of-type(5) >form > section > section {
+    display: flex;
+    align-items: center;
+}
+
+section:nth-of-type(5) >form > section > section > label, input {
+    margin-right: 5px;
+}
+
+section:nth-of-type(5) >form > section > input, select {
+    width: 85%;
  }
 
  .header-banner-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
-
- }
+}

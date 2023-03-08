@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -9,29 +9,27 @@
     <link rel="stylesheet" href="new-style.css">
   </head>
   <body>
-    
+    <header>
+      <img id="logo" src="../Image/ABC optic.jpg" alt="logo image" />
+      <img id="banner" src="../Image/banner.png" class="header-banner-image" />
+    </header>
     <main>
-      <header>
-        <img id="logo" src="../Image/ABC optic.jpg" alt="logo image" />
-        <img id="banner" src="../Image/banner.png" class="header-banner-image" />
-      </header>
-
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="">Products</a></li>
-          <li><a href="">Our Service</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Products</a></li>
+          <li><a href="/">Our Service</a></li>
+          <li><a href="/">About Us</a></li>
+          <li><a href="/">Contact</a></li>
         </ul>
       </nav>
      
+      <!-- section 1 -->
       <section>
         <h1>ABC OPTIC</h1>
-
       </section>
     
-
+      <!-- article 1 -->
       <article>
         <aside>
           <h1>What is ABC optic</h1>
@@ -54,34 +52,38 @@
         </aside>
       </article>
 
-      <aside>
+      <!-- section 2 -->
+      <section>
 
         <h1>Check our latest product</h1>
         
-        <aside>
-          <aside>
+        <section>
+          <section>
             <img src="../Image/galerry 1.jpeg" alt="first galerry image" class="product-item-image-head">
+            
             <h3>GUCCA CLASSIC GLASSES</h3>
-            <p>Price: 399$</p>
-          </aside>
+            <p>Price: $399</p>
+          </section>
     
-          <aside>
+          <section>
             <img src="../Image/galerry 2.webp" alt="second gallery image" class="product-item-image-head">
             <h3>GIVANCHY GLASSES </h3>
-            <p>Price: 299$</p>
-          </aside>
+            <p>Price: $299</p>
+          </section>
     
-          <aside>
+          <section>
             <img src="../Image/galerry 3.webp" alt="third gallery image" class="product-item-image-head">
             <h3>BALENCIAGI GLASSES</h3>
-            <p>Price 399$</p>
-          </aside>
-        </aside>
-      </article>
+            <p>Price $399</p>
+          </section>
+        </section>
+      </section>
+      
 
+      <!-- section 3 -->
       <section>
         <h1>Our Service</h1>
-        <body>
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Quisque ac neque sed est volutpat varius.
           Aenean id turpis a odio aliquam pulvinar.
@@ -95,31 +97,32 @@
           Phasellus quis sapien congue, ultricies nulla a, maximus elit.
           Pellentesque ornare nibh sed erat tempus dignissim.
           Vestibulum ut mauris molestie, accumsan turpis vel, dictum nibh.
-        </body>
+        </p>
 
       </section>
 
-
+      <!-- section 4 -->
       <section>
         <h1>Promo This Month</h1>
-        <aside>
-          <aside>
+        <section>
+          <section>
             <img src="../Image/pexels-photo-5754242.jpeg" alt="first promo image"class="promo-item-image-head">
-            <h2>20% on second item</h2>
-          </aside>
+            <h4>20% on second item</h4>
+          </section>
     
-          <aside>
+          <section>
             <img src="../Image/pexels-photo-947885.webp" alt="first promo image" class="promo-item-image-head" >
-            <h2>15% on our Service</h2>
-          </aside>
-        </aside>
+            <h4>15% on our Service</h4>
+          </section>
+        </section>
       </section>
 
+      <!-- section 5 -->
       <section>
         <h1>Account registration</h1>
         
-        <form action="../index.html" method="GET">
-          <div class="contact">
+        <form action="index.html" method="POST">
+          <section>
             <label> First name : </label>
             <input
               type="text"
@@ -128,9 +131,9 @@
               maxlength="10"
               pattern="[a-zA-Z]+"
             />
-          </div>
+          </section>
     
-          <div class="contact">
+          <section>
             <label> Last name : </label>
             <input
               type="text"
@@ -139,16 +142,16 @@
               maxlength="10"
               pattern="[a-zA-Z]+"
             />
-          </div>
+          </section>
     
-          <div class="contact">
+          <section>
             <label>Address :</label>
-            <input type="text" />
-          </div>
+            <input type="text" name="address_line_1" />
+          </section>
       
-          <div class="contact">
+          <section>
             <label>State</label>
-            <select>
+            <select name="state">
               <option value="QLD">QLD</option>
               <option value="NSW">NSA</option>
               <option value="VIC">VIC</option>
@@ -158,60 +161,64 @@
               <option value="NT">NT</option>
               <option value="ACT">ACT</option>
             </select>
-          </div>
+          </section>
           
-          <div class="contact">
+          <section>
             <label>Email :</label>
-            <input type="email" />
-          </div>
+            <input type="email" name="email" />
+          </section>
     
-          <div class="contact">
+          <section>
             <label>Phone :</label>
-            <input type="tel" minlength="10" maxlength="10" />
-          </div>
+            <input type="tel" minlength="10" maxlength="10" name="phone" />
+          </section>
       
-          <div class="contact">
+          <section>
             <label>Username :</label>
-            <input type="text" />
-          </div>
+            <input type="text" name="username" />
+          </section>
       
-          <div class="contact">
+          <section>
             <label>Password :</label>
-            <input type="password" />
-          </div>
+            <input type="password" name="password" />
+          </section>
       
-          <div class="contact">
+          <section>
             <label>Gender :</label>
-            <div>
+            <section>
+
               <input type="radio" name="gender" id="male" />
               <label for="male">Male</label>
+
               <input type="radio" name="gender" id="female" />
               <label for="female">Female</label>
-            </div>
-          </div>
+            </section>
+          </section>
       
-          <div class="contact">
+          <section>
             <label>Sign up or suscribe for the news later?</label>
-            <div>
-              <input type="radio" value="yes" name="signup" />Yes
-              <input type="radio" value="no" name="signup" />No
-            </div>
-          </div>
+            <section>
+              <input type="radio" value="yes" name="signup" id="yes" />
+              <label for="yes">Yes</label>
+
+              <input type="radio" value="no" name="signup" id="no" />
+              <label for="no">No</label>
+            </section>
+          </section>
       
-          <div class="contact">
+          <section>
             <label>How did You know about Us?</label>
-            <div>
-              <input type="checkbox" value="google" />Google
-              <input type="checkbox" value="friend" />friend
-              <input type="checkbox" value="other" />Other
-            </div>
-          </div>
+            <section>
+              <input type="checkbox" value="google" name="lead_source[]" id="google" />
+              <label for="google">Google</label>
+
+              <input type="checkbox" value="friend" name="lead_source[]" id="friend" /> <label for="friend">Friend</label>
+              <input type="checkbox" value="other" name="lead_source[]" id="other" /> <label for="other">Other</label>
+            </section>
+          </section>
     
     
-      
-          
-      
-          <div id="contactDetails">
+          <section id="contactDetails">
             <table>
               <tr>
                 <td>Admin Name :</td>
@@ -230,7 +237,7 @@
                 <td>0450123987</td>
               </tr>
             </table>
-          </div>
+          </section>
         </form>
       
       </section>
@@ -253,5 +260,5 @@
       </div>
     </footer>
 
-  </body>
+  </body> 
 </html>
