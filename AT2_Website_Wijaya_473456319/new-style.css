@@ -198,6 +198,7 @@ section:nth-of-type(5) > form > section {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 5px;
+    width: 100%;
 }
 
 section:nth-of-type(5) >form > section > label {
@@ -213,12 +214,32 @@ section:nth-of-type(5) >form > section > section > label, input {
     margin-right: 5px;
 }
 
-section:nth-of-type(5) >form > section > input, select {
+section:nth-of-type(5) > form > section > input, select {
     width: 85%;
- }
+}
 
- .header-banner-image {
+section:nth-of-type(5) > form > section > table {
+    border: 0.5px solid #efefef
+}
+
+
+body > header > img:last-of-type {
     width: 100%;
     height: 200px;
     object-fit: cover;
+}
+
+footer > section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > section > a {
+    padding: 5px;
+}
+
+footer > section:last-child {
+    padding: 5px;
+    color: #FFFFFF;
 }
